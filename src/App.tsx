@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 
+import logoUrl from '@/assets/logo.svg';
 import { Archetype } from '@/components/Archetype';
 import { FileUploader } from '@/components/FileUploader';
 import { ResultsTable } from '@/components/ResultsTable';
@@ -51,8 +52,9 @@ function App() {
 
   return (
     <div className='mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 p-4'>
-      <header className='flex items-center justify-between'>
-        <h1 className='text-2xl font-bold'>MetaDex</h1>
+      <header className='flex items-center gap-3'>
+        <img src={logoUrl} alt='MetaDex logo' className='h-16 w-auto' />
+        <h1 className='text-3xl font-bold'>MetaDex</h1>
       </header>
 
       <section>
