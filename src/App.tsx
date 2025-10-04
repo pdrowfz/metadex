@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 
+import { Archetype } from '@/components/Archetype';
 import { FileUploader } from '@/components/FileUploader';
 import { ResultsTable } from '@/components/ResultsTable';
 import { Input } from '@/components/ui/input';
@@ -114,7 +115,9 @@ function App() {
                         }}
                         className='flex items-center justify-between gap-3 rounded-md border border-gray-200 px-3 py-2 text-sm'
                       >
-                        <span className='truncate pr-2'>{deck}</span>
+                        <span className='truncate pr-2'>
+                          <Archetype slug={deck} />
+                        </span>
                         <div className='flex items-center gap-1'>
                           <Input
                             inputMode='decimal'

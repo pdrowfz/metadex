@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
 
+import { Archetype } from '@/components/Archetype';
 import { computeExpectedWinRates } from '@/lib/compute-ewr';
 import { type MatchupProcessedRow } from '@/types/matchup';
 
@@ -67,7 +68,9 @@ export function ResultsTable({ decks, percents, rows }: Props) {
                 className='border-b last:border-b-0'
               >
                 <td className='p-2'>{index + 1}</td>
-                <td className='truncate p-2'>{row.deck}</td>
+                <td className='truncate p-2'>
+                  <Archetype slug={row.deck} />
+                </td>
                 <td className='p-2 text-right'>
                   {(row.bo3 * 100).toFixed(1)}%
                 </td>
