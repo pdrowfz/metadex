@@ -79,7 +79,7 @@ export function FileUploader({ onParsed }: Props) {
         aria-label='Upload CSV'
       >
         <p className='mb-2 text-sm text-gray-600'>
-          Drag and drop a .csv file here, or
+          Drag and drop the .csv file here, or
         </p>
         <Button disabled={loading} type='button' variant='default' size='sm'>
           {loading ? 'Processing…' : 'Choose file'}

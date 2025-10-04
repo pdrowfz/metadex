@@ -59,7 +59,7 @@ function App() {
 
       <section>
         <h2 className='mb-2 text-center text-lg font-semibold'>
-          Upload matchups CSV
+          Upload Matchups .csv file exported from Trainer Hill
         </h2>
         <div className='mx-auto max-w-xl'>
           <FileUploader onParsed={setData} />
@@ -68,17 +68,11 @@ function App() {
 
       {uniqueDecks.length > 0 && (
         <section>
-          <h2 className='mb-2 text-lg font-semibold'>Unique decks</h2>
-          {sumPercents(Object.values(deckPercents)) > 100 && (
-            <p className='mb-2 text-sm text-red-600'>
-              Please keep total ≤ 100%.
-            </p>
-          )}
-          <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+          <div className='grid grid-cols-1 gap-16 md:grid-cols-2'>
             <div>
-              <h3 className='mb-2 text-sm font-medium text-gray-700'>
-                Meta input
-              </h3>
+              <h2 className='mb-2 text-lg font-semibold'>
+                Meta Percentages Prediction
+              </h2>
               <div className='mb-2 flex items-center justify-between text-sm'>
                 <div className='text-gray-600'>
                   Enter expected meta percentages
@@ -96,6 +90,12 @@ function App() {
                   </span>
                 </div>
               </div>
+
+              {sumPercents(Object.values(deckPercents)) > 100 && (
+                <p className='mb-2 text-sm text-red-600'>
+                  Please keep total ≤ 100%.
+                </p>
+              )}
               <ul className='grid grid-cols-1 gap-2'>
                 <AnimatePresence initial={false}>
                   {uniqueDecks
@@ -150,9 +150,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <h3 className='mb-2 text-sm font-medium text-gray-700'>
-                Results
-              </h3>
+              <h2 className='mb-2 text-lg font-semibold'>Expected Win Rates</h2>
               <ResultsTable
                 decks={uniqueDecks}
                 percents={debouncedPercents}
