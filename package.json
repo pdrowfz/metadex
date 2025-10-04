@@ -21,6 +21,7 @@
     ]
   },
   "dependencies": {
+    "framer-motion": "^11.3.24",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.14",
     "class-variance-authority": "^0.7.1",
