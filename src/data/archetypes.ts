@@ -145,6 +145,116 @@ export const archetypes: Record<string, Archetype> = {
     displayName: 'Tera Box',
     pokemons: ['noctowl', 'ogerpon-wellspring'],
   },
+  'hydreigon-ex': {
+    slug: 'hydreigon-ex',
+    displayName: 'Hydreigon',
+    pokemons: ['hydreigon'],
+  },
+  'greninja-ex': {
+    slug: 'greninja-ex',
+    displayName: 'Greninja',
+    pokemons: ['greninja'],
+  },
+  'slowking-scr': {
+    slug: 'slowking-scr',
+    displayName: 'Slowking',
+    pokemons: ['slowking'],
+  },
+  'archaludon-ex': {
+    slug: 'archaludon-ex',
+    displayName: 'Archaludon',
+    pokemons: ['archaludon'],
+  },
+  'milotic-farigiraf': {
+    slug: 'milotic-farigiraf',
+    displayName: 'Milotic Farigiraf',
+    pokemons: ['milotic', 'farigiraf'],
+  },
+  'roaring-moon-ex': {
+    slug: 'roaring-moon-ex',
+    displayName: 'Roaring Moon',
+    pokemons: ['roaring-moon'],
+  },
+  'blissey-ex': {
+    slug: 'blissey-ex',
+    displayName: 'Blissey',
+    pokemons: ['blissey'],
+  },
+  'rocket-mewtwo-ex': {
+    slug: 'rocket-mewtwo-ex',
+    displayName: "Rocket's Mewtwo",
+    pokemons: ['mewtwo', 'spidops'],
+  },
+  'iron-thorns-ex': {
+    slug: 'iron-thorns-ex',
+    displayName: 'Iron Thorns',
+    pokemons: ['iron-thorns'],
+  },
+  'festival-lead': {
+    slug: 'festival-lead',
+    displayName: 'Festival Lead',
+    pokemons: ['dipplin', 'thwackey'],
+  },
+  'charizard-noctowl': {
+    slug: 'charizard-noctowl',
+    displayName: 'Charizard Noctowl',
+    pokemons: ['charizard', 'noctowl'],
+  },
+  'ogerpon-ex': {
+    slug: 'ogerpon-ex',
+    displayName: 'Ogerpon',
+    pokemons: ['ogerpon', 'ogerpon-wellspring'],
+  },
+  'great-tusk-tef': {
+    slug: 'great-tusk-tef',
+    displayName: 'Great Tusk Mill',
+    pokemons: ['great-tusk'],
+  },
+  'charizard-dusknoir': {
+    slug: 'charizard-dusknoir',
+    displayName: 'Charizard Dusknoir',
+    pokemons: ['charizard', 'dusknoir'],
+  },
+  'rocket-porygon-z': {
+    slug: 'rocket-porygon-z',
+    displayName: "Rocket's Porygon-Z",
+    pokemons: ['porygon-z'],
+  },
+  'wugtrio-svi': {
+    slug: 'wugtrio-svi',
+    displayName: 'Wugtrio Mill',
+    pokemons: ['wugtrio'],
+  },
+  'chien-pao-baxcalibur': {
+    slug: 'chien-pao-baxcalibur',
+    displayName: 'Chien-Pao Baxcalibur',
+    pokemons: ['chien-pao', 'baxcalibur'],
+  },
+  'miraidon-ex': {
+    slug: 'miraidon-ex',
+    displayName: 'Miraidon',
+    pokemons: ['miraidon'],
+  },
+  'hop-zacian': {
+    slug: 'hop-zacian',
+    displayName: "Hop's Zacian",
+    pokemons: ['zacian-crowned', 'snorlax'],
+  },
+  'terapagos-noctowl': {
+    slug: 'terapagos-noctowl',
+    displayName: 'Terapagos Noctowl',
+    pokemons: ['terapagos', 'noctowl'],
+  },
+  'okidogi-twm': {
+    slug: 'okidogi-twm',
+    displayName: 'Okidogi',
+    pokemons: ['okidogi'],
+  },
+  'poison-archaludon': {
+    slug: 'poison-archaludon',
+    displayName: 'Poison Archaludon',
+    pokemons: ['archaludon', 'brute-bonnet'],
+  },
 };
 
 export function getArchetype(slug: string): Archetype {
