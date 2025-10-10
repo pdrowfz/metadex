@@ -80,6 +80,11 @@ export const archetypes: Record<string, Archetype> = {
     displayName: 'Gholdengo',
     pokemons: ['gholdengo'],
   },
+  'gholdengo-lunatone': {
+    slug: 'gholdengo-lunatone',
+    displayName: 'Gholdengo Lunatone',
+    pokemons: ['gholdengo', 'lunatone'],
+  },
   'gholdengo-joltik-box': {
     slug: 'gholdengo-joltik-box',
     displayName: 'Gholdengo Joltik Box',
@@ -109,6 +114,11 @@ export const archetypes: Record<string, Archetype> = {
     slug: 'lucario-hariyama',
     displayName: 'Mega Lucario',
     pokemons: ['lucario-mega', 'hariyama'],
+  },
+  'mega-absol-ex': {
+    slug: 'mega-absol-ex',
+    displayName: 'Mega Absol Box',
+    pokemons: ['absol-mega', 'ogerpon-cornerstone'],
   },
   'mega-venusaur-ex': {
     slug: 'mega-venusaur-ex',
