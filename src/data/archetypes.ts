@@ -110,14 +110,29 @@ export const archetypes: Record<string, Archetype> = {
     displayName: 'Joltik Box',
     pokemons: ['joltik', 'pikachu'],
   },
+  'kangaskhan-bouffalant': {
+    slug: 'kangaskhan-bouffalant',
+    displayName: 'Kangaskhan Bouffalant',
+    pokemons: ['kangaskhan-mega', 'bouffalant'],
+  },
   'lucario-hariyama': {
     slug: 'lucario-hariyama',
     displayName: 'Mega Lucario',
     pokemons: ['lucario-mega', 'hariyama'],
   },
+  'manectric-eelektrik': {
+    slug: 'manectric-eelektrik',
+    displayName: 'Manectric Eelektrik',
+    pokemons: ['manectric-mega', 'eelektrik'],
+  },
+  'mega-absol-box': {
+    slug: 'mega-absol-box',
+    displayName: 'Mega Absol Box',
+    pokemons: ['absol-mega', 'kangaskhan-mega'],
+  },
   'mega-absol-ex': {
     slug: 'mega-absol-ex',
-    displayName: 'Mega Absol Box',
+    displayName: 'Mega Absol ex',
     pokemons: ['absol-mega', 'ogerpon-cornerstone'],
   },
   'mega-venusaur-ex': {
